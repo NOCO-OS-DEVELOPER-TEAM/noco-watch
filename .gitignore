@@ -1,0 +1,32 @@
+node_modules/
+client/dist/
+noco-watch-web/dist/
+noco-watch-web/node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+Thumbs.db
+*.local
+
+# Never publish media binaries or film assets to GitHub
+# (PC remains the only place that stores films / covers / intros)
+media/films/
+media/covers/
+media/intros/
+media/subtitles/
+media/system/
+media/**/*.mp4
+media/**/*.webm
+media/**/*.mkv
+media/**/*.mov
+media/**/*.avi
+media/**/*.m4v
+!media/.gitkeep
+
+# Electron / OS noise
+*.exe
+*.dmg
+.vscode/
+.idea/

@@ -1,0 +1,1523 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "q-1",
+      "category": "NOCO WATCH",
+      "question": "Was ist NOCO WATCH?",
+      "answer": "NOCO WATCH ist dein lokaler Streamingdienst. Filme und Serien liegen auf dem Windows-PC und werden über das WLAN gestreamt.",
+      "keywords": [
+        "was",
+        "ist",
+        "noco",
+        "watch"
+      ]
+    },
+    {
+      "id": "q-2",
+      "category": "NOCO WATCH",
+      "question": "Wie funktioniert NOCO WATCH?",
+      "answer": "Der PC ist der Server. iPhone, Browser und die Windows-App greifen über die API auf Bibliothek und Streams zu.",
+      "keywords": [
+        "wie",
+        "funktioniert",
+        "noco",
+        "watch"
+      ]
+    },
+    {
+      "id": "q-3",
+      "category": "NOCO WATCH",
+      "question": "Was sind NOCO Originals?",
+      "answer": "NOCO Originals sind exklusive Titel, die speziell für NOCO WATCH produziert oder aufbereitet wurden.",
+      "keywords": [
+        "was",
+        "sind",
+        "noco",
+        "originals"
+      ]
+    },
+    {
+      "id": "q-4",
+      "category": "NOCO WATCH",
+      "question": "Wo laufen die Filme?",
+      "answer": "Die Filmdateien bleiben auf dem Windows-PC. Clients laden nur Metadaten und streamen bei Bedarf.",
+      "keywords": [
+        "laufen",
+        "die",
+        "filme"
+      ]
+    },
+    {
+      "id": "q-5",
+      "category": "NOCO WATCH",
+      "question": "Brauche ich Internet?",
+      "answer": "Für das lokale Streaming reicht das gleiche WLAN. Öffentliches Internet ist nicht nötig.",
+      "keywords": [
+        "brauche",
+        "ich",
+        "internet"
+      ]
+    },
+    {
+      "id": "q-6",
+      "category": "NOCO WATCH",
+      "question": "Wie starte ich den Server?",
+      "answer": "Starte die NOCO WATCH Windows-App oder führe npm start im Projektordner aus.",
+      "keywords": [
+        "wie",
+        "starte",
+        "ich",
+        "den",
+        "server"
+      ]
+    },
+    {
+      "id": "q-7",
+      "category": "NOCO WATCH",
+      "question": "Was ist die Steuerzentrale?",
+      "answer": "Dort siehst du Serverstatus, LAN-Adresse und Systeminfos deines NOCO WATCH Servers.",
+      "keywords": [
+        "was",
+        "ist",
+        "die",
+        "steuerzentrale"
+      ]
+    },
+    {
+      "id": "q-8",
+      "category": "NOCO WATCH",
+      "question": "Kann ich vom iPhone schauen?",
+      "answer": "Ja. Öffne im gleichen WLAN die Server-URL oder die Mobile Web UI unter /web/.",
+      "keywords": [
+        "kann",
+        "ich",
+        "vom",
+        "iphone",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-9",
+      "category": "NOCO WATCH",
+      "question": "Gibt es eine App Store App?",
+      "answer": "V1 nutzt Browser und Windows-App. Eine IPA kann später dieselbe API verwenden.",
+      "keywords": [
+        "gibt",
+        "eine",
+        "app",
+        "store"
+      ]
+    },
+    {
+      "id": "q-10",
+      "category": "NOCO WATCH",
+      "question": "Wo liegen die Metadaten?",
+      "answer": "In metadata/videos.json auf dem PC. Die Clients speichern keine eigene Filmdatenbank.",
+      "keywords": [
+        "liegen",
+        "die",
+        "metadaten"
+      ]
+    },
+    {
+      "id": "q-11",
+      "category": "NOCO WATCH",
+      "question": "Was ist ein HTML Movie?",
+      "answer": "Ein HTML-Film ist ein interaktiver Kurzfilm als Webseite, ausgeliefert über /api/content/:id.",
+      "keywords": [
+        "was",
+        "ist",
+        "ein",
+        "html",
+        "movie"
+      ]
+    },
+    {
+      "id": "q-12",
+      "category": "NOCO WATCH",
+      "question": "Was ist ein Video-Stream?",
+      "answer": "MP4-Dateien werden über /api/stream/:id mit HTTP Range Requests gestreamt.",
+      "keywords": [
+        "was",
+        "ist",
+        "ein",
+        "video",
+        "stream"
+      ]
+    },
+    {
+      "id": "q-13",
+      "category": "NOCO WATCH",
+      "question": "Wie funktioniert der Player?",
+      "answer": "Der NocoPlayer zeigt Intro, Film, Untertitel, Timeline und Vollbild – optimiert für Desktop und Mobile.",
+      "keywords": [
+        "wie",
+        "funktioniert",
+        "der",
+        "player"
+      ]
+    },
+    {
+      "id": "q-14",
+      "category": "NOCO WATCH",
+      "question": "Kann ich Untertitel nutzen?",
+      "answer": "Ja, wenn für den Titel WebVTT-Untertitel hinterlegt sind. Im Player über CC aktivieren.",
+      "keywords": [
+        "kann",
+        "ich",
+        "untertitel",
+        "nutzen"
+      ]
+    },
+    {
+      "id": "q-15",
+      "category": "NOCO WATCH",
+      "question": "Was bedeutet Server online?",
+      "answer": "Der Express-Server antwortet und die Bibliothek ist erreichbar.",
+      "keywords": [
+        "was",
+        "bedeutet",
+        "server",
+        "online"
+      ]
+    },
+    {
+      "id": "q-16",
+      "category": "NOCO WATCH",
+      "question": "Warum muss ich im WLAN sein?",
+      "answer": "Weil der Server nur im privaten Netzwerk erreichbar ist – nicht öffentlich im Internet.",
+      "keywords": [
+        "warum",
+        "muss",
+        "ich",
+        "wlan",
+        "sein"
+      ]
+    },
+    {
+      "id": "q-17",
+      "category": "NOCO WATCH",
+      "question": "Welche Clients gibt es?",
+      "answer": "Windows Electron-App, Browser auf dem PC, Mobile Web und später eine mögliche IPA.",
+      "keywords": [
+        "welche",
+        "clients",
+        "gibt"
+      ]
+    },
+    {
+      "id": "q-18",
+      "category": "NOCO WATCH",
+      "question": "Ist NOCO WATCH kostenlos?",
+      "answer": "Es ist dein eigenes lokales System. Es speichert und streamt deine eigenen Inhalte.",
+      "keywords": [
+        "ist",
+        "noco",
+        "watch",
+        "kostenlos"
+      ]
+    },
+    {
+      "id": "q-19",
+      "category": "NOCO WATCH",
+      "question": "Kann ich eigene Filme hinzufügen?",
+      "answer": "Ja. Datei nach media/ legen und Eintrag in metadata/videos.json ergänzen.",
+      "keywords": [
+        "kann",
+        "ich",
+        "eigene",
+        "filme",
+        "hinzufügen"
+      ]
+    },
+    {
+      "id": "q-20",
+      "category": "NOCO WATCH",
+      "question": "Was ist die Mobile Web Version?",
+      "answer": "Ein Frontend ohne Mediendateien, das dynamisch den NOCO WATCH Server abfragt.",
+      "keywords": [
+        "was",
+        "ist",
+        "die",
+        "mobile",
+        "web",
+        "version"
+      ]
+    },
+    {
+      "id": "q-21",
+      "category": "Filme",
+      "question": "Welche Filme gibt es?",
+      "answer": "In deiner Bibliothek findest du NOCO Originals wie Magic World, The Jungle Run, NOCO Future und Josies Jahre.",
+      "keywords": [
+        "welche",
+        "filme",
+        "gibt"
+      ]
+    },
+    {
+      "id": "q-22",
+      "category": "Filme",
+      "question": "Was ist der längste Film?",
+      "answer": "Aktuell ist Josies Jahre der längste Titel in der Bibliothek.",
+      "keywords": [
+        "was",
+        "ist",
+        "der",
+        "längste",
+        "film"
+      ]
+    },
+    {
+      "id": "q-23",
+      "category": "Filme",
+      "question": "Welche Filme sind Fantasy?",
+      "answer": "Die Magic-World-Episoden sind Fantasy (mit Adventure und Animation).",
+      "keywords": [
+        "welche",
+        "filme",
+        "sind",
+        "fantasy"
+      ]
+    },
+    {
+      "id": "q-24",
+      "category": "Filme",
+      "question": "Welche Filme sind Animation?",
+      "answer": "Die Magic-World-Reihe ist als Animation gekennzeichnet.",
+      "keywords": [
+        "welche",
+        "filme",
+        "sind",
+        "animation"
+      ]
+    },
+    {
+      "id": "q-25",
+      "category": "Filme",
+      "question": "Welche Filme sind Sci-Fi?",
+      "answer": "Die NOCO-Future-Episoden sind Science-Fiction.",
+      "keywords": [
+        "welche",
+        "filme",
+        "sind",
+        "sci"
+      ]
+    },
+    {
+      "id": "q-26",
+      "category": "Filme",
+      "question": "Welche Filme sind Adventure?",
+      "answer": "The Jungle Run und Teile von Magic World / NOCO Future tragen Adventure.",
+      "keywords": [
+        "welche",
+        "filme",
+        "sind",
+        "adventure"
+      ]
+    },
+    {
+      "id": "q-27",
+      "category": "Filme",
+      "question": "Welche Filme sind Mystery?",
+      "answer": "The Jungle Run und ausgewählte NOCO-Future-Folgen enthalten Mystery.",
+      "keywords": [
+        "welche",
+        "filme",
+        "sind",
+        "mystery"
+      ]
+    },
+    {
+      "id": "q-28",
+      "category": "Filme",
+      "question": "Welche Filme sind Drama?",
+      "answer": "Josies Jahre ist als Drama hinterlegt.",
+      "keywords": [
+        "welche",
+        "filme",
+        "sind",
+        "drama"
+      ]
+    },
+    {
+      "id": "q-29",
+      "category": "Filme",
+      "question": "Zeig mir kurze Filme.",
+      "answer": "Die HTML-Originals dauern meist rund 1:40–1:50 – ideal für etwas Kurzes.",
+      "keywords": [
+        "zeig",
+        "mir",
+        "kurze",
+        "filme"
+      ]
+    },
+    {
+      "id": "q-30",
+      "category": "Filme",
+      "question": "Zeig mir lange Filme.",
+      "answer": "Josies Jahre ist der längste Titel und eignet sich für eine längere Session.",
+      "keywords": [
+        "zeig",
+        "mir",
+        "lange",
+        "filme"
+      ]
+    },
+    {
+      "id": "q-31",
+      "category": "Filme",
+      "question": "Was kann ich heute schauen?",
+      "answer": "Starte mit einem NOCO Original – z. B. Magic World oder The Jungle Run.",
+      "keywords": [
+        "was",
+        "kann",
+        "ich",
+        "heute",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-32",
+      "category": "Filme",
+      "question": "Welche Titel sind neu?",
+      "answer": "Die jüngsten Einträge findest du unter Neu bei NOCO auf der Startseite.",
+      "keywords": [
+        "welche",
+        "titel",
+        "sind",
+        "neu"
+      ]
+    },
+    {
+      "id": "q-33",
+      "category": "Filme",
+      "question": "Welche Titel sind featured?",
+      "answer": "Die HTML-Serien The Jungle Run, Magic World und NOCO Future sind als Highlights markiert.",
+      "keywords": [
+        "welche",
+        "titel",
+        "sind",
+        "featured"
+      ]
+    },
+    {
+      "id": "q-34",
+      "category": "Filme",
+      "question": "Gibt es persönliche Filme?",
+      "answer": "Ja – Josies Jahre ist ein persönlicher Erinnerungsfilm.",
+      "keywords": [
+        "gibt",
+        "persönliche",
+        "filme"
+      ]
+    },
+    {
+      "id": "q-35",
+      "category": "Filme",
+      "question": "Wie viele Filme gibt es?",
+      "answer": "Die aktuelle Anzahl siehst du in der Bibliothek bzw. in der Steuerzentrale.",
+      "keywords": [
+        "wie",
+        "viele",
+        "filme",
+        "gibt"
+      ]
+    },
+    {
+      "id": "q-36",
+      "category": "Filme",
+      "question": "Welche Serien gibt es?",
+      "answer": "Magic World, The Jungle Run und NOCO Future.",
+      "keywords": [
+        "welche",
+        "serien",
+        "gibt"
+      ]
+    },
+    {
+      "id": "q-37",
+      "category": "Filme",
+      "question": "Was ist ein guter Einstieg?",
+      "answer": "Magic World: The Hidden Door oder The Jungle Run Episode 1.",
+      "keywords": [
+        "was",
+        "ist",
+        "ein",
+        "guter",
+        "einstieg"
+      ]
+    },
+    {
+      "id": "q-38",
+      "category": "Filme",
+      "question": "Empfiehl etwas Spannendes.",
+      "answer": "The Jungle Run oder NOCO Future: The Escape liefern Tempo und Spannung.",
+      "keywords": [
+        "empfiehl",
+        "etwas",
+        "spannendes"
+      ]
+    },
+    {
+      "id": "q-39",
+      "category": "Filme",
+      "question": "Empfiehl etwas Magisches.",
+      "answer": "Magic World – besonders The Hidden Door und The Last Spell.",
+      "keywords": [
+        "empfiehl",
+        "etwas",
+        "magisches"
+      ]
+    },
+    {
+      "id": "q-40",
+      "category": "Filme",
+      "question": "Empfiehl etwas Futuristisches.",
+      "answer": "NOCO Future, beginnend mit First Contact.",
+      "keywords": [
+        "empfiehl",
+        "etwas",
+        "futuristisches"
+      ]
+    },
+    {
+      "id": "q-41",
+      "category": "Magic World",
+      "question": "Was ist Magic World?",
+      "answer": "Magic World ist eine Fantasy-Animationsreihe von NOCO Originals rund um Magie, Portale und ein Kristallkönigreich.",
+      "keywords": [
+        "was",
+        "ist",
+        "magic",
+        "world"
+      ]
+    },
+    {
+      "id": "q-42",
+      "category": "Magic World",
+      "question": "Wie viele Episoden hat Magic World?",
+      "answer": "Magic World hat drei Episoden.",
+      "keywords": [
+        "wie",
+        "viele",
+        "episoden",
+        "hat",
+        "magic",
+        "world"
+      ]
+    },
+    {
+      "id": "q-43",
+      "category": "Magic World",
+      "question": "Welche Episode kommt zuerst?",
+      "answer": "Episode 1: The Hidden Door.",
+      "keywords": [
+        "welche",
+        "episode",
+        "kommt",
+        "zuerst"
+      ]
+    },
+    {
+      "id": "q-44",
+      "category": "Magic World",
+      "question": "Was passiert in Episode 1?",
+      "answer": "Eine leuchtende Tür führt in einen magischen Wald.",
+      "keywords": [
+        "was",
+        "passiert",
+        "episode"
+      ]
+    },
+    {
+      "id": "q-45",
+      "category": "Magic World",
+      "question": "Was passiert in Episode 2?",
+      "answer": "Das Kristallkönigreich verliert Energie – ein Funke bringt Licht zurück.",
+      "keywords": [
+        "was",
+        "passiert",
+        "episode"
+      ]
+    },
+    {
+      "id": "q-46",
+      "category": "Magic World",
+      "question": "Was passiert in Episode 3?",
+      "answer": "Mit dem letzten Zauber kehrt das Licht zurück und ein Funke wird zum Stern.",
+      "keywords": [
+        "was",
+        "passiert",
+        "episode"
+      ]
+    },
+    {
+      "id": "q-47",
+      "category": "Magic World",
+      "question": "Ist Magic World ein NOCO Original?",
+      "answer": "Ja, die gesamte Reihe ist ein NOCO Original.",
+      "keywords": [
+        "ist",
+        "magic",
+        "world",
+        "ein",
+        "noco",
+        "original"
+      ]
+    },
+    {
+      "id": "q-48",
+      "category": "Magic World",
+      "question": "Welche Genres hat Magic World?",
+      "answer": "Fantasy, Adventure und Animation.",
+      "keywords": [
+        "welche",
+        "genres",
+        "hat",
+        "magic",
+        "world"
+      ]
+    },
+    {
+      "id": "q-49",
+      "category": "Magic World",
+      "question": "Gibt es Untertitel für Magic World?",
+      "answer": "Für Episode 1 sind deutsche und englische Untertitel verfügbar.",
+      "keywords": [
+        "gibt",
+        "untertitel",
+        "für",
+        "magic",
+        "world"
+      ]
+    },
+    {
+      "id": "q-50",
+      "category": "Magic World",
+      "question": "Wonach suche ich für Magic World?",
+      "answer": "Stichworte wie Magie, Zauber, Fantasy, Wald oder Magic.",
+      "keywords": [
+        "wonach",
+        "suche",
+        "ich",
+        "für",
+        "magic",
+        "world"
+      ]
+    },
+    {
+      "id": "q-51",
+      "category": "The Jungle Run",
+      "question": "Was ist The Jungle Run?",
+      "answer": "Eine Abenteuer-Mystery-Reihe im Regenwald mit Tempel, Kristall und Portal.",
+      "keywords": [
+        "was",
+        "ist",
+        "the",
+        "jungle",
+        "run"
+      ]
+    },
+    {
+      "id": "q-52",
+      "category": "The Jungle Run",
+      "question": "Wie viele Episoden hat The Jungle Run?",
+      "answer": "Drei Episoden.",
+      "keywords": [
+        "wie",
+        "viele",
+        "episoden",
+        "hat",
+        "the",
+        "jungle",
+        "run"
+      ]
+    },
+    {
+      "id": "q-53",
+      "category": "The Jungle Run",
+      "question": "Womit soll ich starten?",
+      "answer": "Mit The Jungle Run Episode 1.",
+      "keywords": [
+        "womit",
+        "soll",
+        "ich",
+        "starten"
+      ]
+    },
+    {
+      "id": "q-54",
+      "category": "The Jungle Run",
+      "question": "Gibt es Action?",
+      "answer": "Ja – Jagd, Tempel und Portalsequenzen.",
+      "keywords": [
+        "gibt",
+        "action"
+      ]
+    },
+    {
+      "id": "q-55",
+      "category": "The Jungle Run",
+      "question": "Welche Genres hat The Jungle Run?",
+      "answer": "Adventure und Mystery.",
+      "keywords": [
+        "welche",
+        "genres",
+        "hat",
+        "the",
+        "jungle",
+        "run"
+      ]
+    },
+    {
+      "id": "q-56",
+      "category": "NOCO Future",
+      "question": "Was ist NOCO Future?",
+      "answer": "Eine Sci-Fi-Reihe über Signale, Raumschiffe und Erstkontakt.",
+      "keywords": [
+        "was",
+        "ist",
+        "noco",
+        "future"
+      ]
+    },
+    {
+      "id": "q-57",
+      "category": "NOCO Future",
+      "question": "Wie viele Episoden hat NOCO Future?",
+      "answer": "Vier Episoden.",
+      "keywords": [
+        "wie",
+        "viele",
+        "episoden",
+        "hat",
+        "noco",
+        "future"
+      ]
+    },
+    {
+      "id": "q-58",
+      "category": "NOCO Future",
+      "question": "Womit startet NOCO Future?",
+      "answer": "First Contact.",
+      "keywords": [
+        "womit",
+        "startet",
+        "noco",
+        "future"
+      ]
+    },
+    {
+      "id": "q-59",
+      "category": "NOCO Future",
+      "question": "Gibt es Weltraum?",
+      "answer": "Ja – Signale, Raumschiffe, Strukturen und Galaxien.",
+      "keywords": [
+        "gibt",
+        "weltraum"
+      ]
+    },
+    {
+      "id": "q-60",
+      "category": "NOCO Future",
+      "question": "Welche Genres hat NOCO Future?",
+      "answer": "Sci-Fi, teils Adventure oder Mystery.",
+      "keywords": [
+        "welche",
+        "genres",
+        "hat",
+        "noco",
+        "future"
+      ]
+    },
+    {
+      "id": "q-61",
+      "category": "Technik",
+      "question": "Wie funktioniert Streaming?",
+      "answer": "Der Browser oder die App fordert Byte-Bereiche per HTTP Range vom Server an.",
+      "keywords": [
+        "wie",
+        "funktioniert",
+        "streaming"
+      ]
+    },
+    {
+      "id": "q-62",
+      "category": "Technik",
+      "question": "Was ist HTTP Range?",
+      "answer": "Damit kann der Player gezielt Teile einer MP4-Datei laden – wichtig für Scrubbing.",
+      "keywords": [
+        "was",
+        "ist",
+        "http",
+        "range"
+      ]
+    },
+    {
+      "id": "q-63",
+      "category": "Technik",
+      "question": "Wo läuft der Server?",
+      "answer": "Auf deinem Windows-PC, standardmäßig Port 3000.",
+      "keywords": [
+        "läuft",
+        "der",
+        "server"
+      ]
+    },
+    {
+      "id": "q-64",
+      "category": "Technik",
+      "question": "Welche API liefert die Bibliothek?",
+      "answer": "GET /api/videos und GET /api/recommendations.",
+      "keywords": [
+        "welche",
+        "api",
+        "liefert",
+        "die",
+        "bibliothek"
+      ]
+    },
+    {
+      "id": "q-65",
+      "category": "Technik",
+      "question": "Wie lade ich einen Film?",
+      "answer": "Erst Metadaten, Cover und Detail – der Stream erst beim Abspielen.",
+      "keywords": [
+        "wie",
+        "lade",
+        "ich",
+        "einen",
+        "film"
+      ]
+    },
+    {
+      "id": "q-66",
+      "category": "Technik",
+      "question": "Was ist CORS?",
+      "answer": "CORS erlaubt dem Frontend (z. B. GitHub Pages) den API-Zugriff vom Browser.",
+      "keywords": [
+        "was",
+        "ist",
+        "cors"
+      ]
+    },
+    {
+      "id": "q-67",
+      "category": "Technik",
+      "question": "Was ist Mixed Content?",
+      "answer": "HTTPS-Seiten dürfen HTTP-APIs oft nicht laden. Deshalb gibt es /web/ über HTTP.",
+      "keywords": [
+        "was",
+        "ist",
+        "mixed",
+        "content"
+      ]
+    },
+    {
+      "id": "q-68",
+      "category": "Technik",
+      "question": "Warum Fullscreen?",
+      "answer": "Damit nur Player und Controls sichtbar sind – ohne Browser-Chrome der Seite.",
+      "keywords": [
+        "warum",
+        "fullscreen"
+      ]
+    },
+    {
+      "id": "q-69",
+      "category": "Technik",
+      "question": "Unterstützt iPhone Safari Streaming?",
+      "answer": "Ja im gleichen WLAN über http://DEINE-IP:3000 oder /web/.",
+      "keywords": [
+        "unterstützt",
+        "iphone",
+        "safari",
+        "streaming"
+      ]
+    },
+    {
+      "id": "q-70",
+      "category": "Technik",
+      "question": "Was speichert localStorage?",
+      "answer": "Optional die Serveradresse und Einstellungen – keine Filmdateien.",
+      "keywords": [
+        "was",
+        "speichert",
+        "localstorage"
+      ]
+    },
+    {
+      "id": "q-71",
+      "category": "Technik",
+      "question": "Was ist die Firewall-Regel?",
+      "answer": "Port 3000 sollte nur für private Netzwerke freigegeben sein.",
+      "keywords": [
+        "was",
+        "ist",
+        "die",
+        "firewall",
+        "regel"
+      ]
+    },
+    {
+      "id": "q-72",
+      "category": "Technik",
+      "question": "Kann ich die Server-IP ändern?",
+      "answer": "Ja in den Einstellungen der Mobile Web UI oder über die LAN-Adresse in der Steuerzentrale.",
+      "keywords": [
+        "kann",
+        "ich",
+        "die",
+        "server",
+        "ändern"
+      ]
+    },
+    {
+      "id": "q-73",
+      "category": "Technik",
+      "question": "Was ist ein Cover?",
+      "answer": "Ein HTML-Poster, das über /api/cover/:id ausgeliefert wird.",
+      "keywords": [
+        "was",
+        "ist",
+        "ein",
+        "cover"
+      ]
+    },
+    {
+      "id": "q-74",
+      "category": "Technik",
+      "question": "Was ist ein Intro?",
+      "answer": "Das NOCO-Originals-Intro vor ausgewählten Titeln.",
+      "keywords": [
+        "was",
+        "ist",
+        "ein",
+        "intro"
+      ]
+    },
+    {
+      "id": "q-75",
+      "category": "Technik",
+      "question": "Wie stoppe ich den Server?",
+      "answer": "Prozess beenden (Ctrl+C) oder die Windows-App schließen.",
+      "keywords": [
+        "wie",
+        "stoppe",
+        "ich",
+        "den",
+        "server"
+      ]
+    },
+    {
+      "id": "q-76",
+      "category": "Empfehlungen",
+      "question": "Was kann ich schauen?",
+      "answer": "Probiere ein NOCO Original – Magic World, Jungle Run oder NOCO Future.",
+      "keywords": [
+        "was",
+        "kann",
+        "ich",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-77",
+      "category": "Empfehlungen",
+      "question": "Ich möchte etwas Spannendes.",
+      "answer": "The Jungle Run oder NOCO Future: The Escape.",
+      "keywords": [
+        "ich",
+        "möchte",
+        "etwas",
+        "spannendes"
+      ]
+    },
+    {
+      "id": "q-78",
+      "category": "Empfehlungen",
+      "question": "Ich möchte Fantasy.",
+      "answer": "Magic World ist die Fantasy-Reihe.",
+      "keywords": [
+        "ich",
+        "möchte",
+        "fantasy"
+      ]
+    },
+    {
+      "id": "q-79",
+      "category": "Empfehlungen",
+      "question": "Ich möchte etwas Kurzes.",
+      "answer": "Die HTML-Episoden dauern meist unter zwei Minuten.",
+      "keywords": [
+        "ich",
+        "möchte",
+        "etwas",
+        "kurzes"
+      ]
+    },
+    {
+      "id": "q-80",
+      "category": "Empfehlungen",
+      "question": "Ich möchte einen NOCO Original.",
+      "answer": "Alle HTML-Serien und Josies Jahre sind als Original markiert.",
+      "keywords": [
+        "ich",
+        "möchte",
+        "einen",
+        "noco",
+        "original"
+      ]
+    },
+    {
+      "id": "q-81",
+      "category": "Empfehlungen",
+      "question": "Ich will Magie.",
+      "answer": "Magic World – Stichworte Magie, Zauber, Fantasy.",
+      "keywords": [
+        "ich",
+        "will",
+        "magie"
+      ]
+    },
+    {
+      "id": "q-82",
+      "category": "Empfehlungen",
+      "question": "Ich will Sci-Fi.",
+      "answer": "NOCO Future von First Contact bis Beyond.",
+      "keywords": [
+        "ich",
+        "will",
+        "sci"
+      ]
+    },
+    {
+      "id": "q-83",
+      "category": "Empfehlungen",
+      "question": "Ich will Abenteuer.",
+      "answer": "The Jungle Run oder Magic World.",
+      "keywords": [
+        "ich",
+        "will",
+        "abenteuer"
+      ]
+    },
+    {
+      "id": "q-84",
+      "category": "Empfehlungen",
+      "question": "Ich will etwas Persönliches.",
+      "answer": "Josies Jahre.",
+      "keywords": [
+        "ich",
+        "will",
+        "etwas",
+        "persönliches"
+      ]
+    },
+    {
+      "id": "q-85",
+      "category": "Empfehlungen",
+      "question": "Ich will Mystery.",
+      "answer": "The Jungle Run und ausgewählte Future-Folgen.",
+      "keywords": [
+        "ich",
+        "will",
+        "mystery"
+      ]
+    },
+    {
+      "id": "q-86",
+      "category": "Empfehlungen",
+      "question": "Zeig mir Animation.",
+      "answer": "Magic World.",
+      "keywords": [
+        "zeig",
+        "mir",
+        "animation"
+      ]
+    },
+    {
+      "id": "q-87",
+      "category": "Empfehlungen",
+      "question": "Etwas Leichtes zum Einstieg.",
+      "answer": "Magic World: The Hidden Door.",
+      "keywords": [
+        "etwas",
+        "leichtes",
+        "zum",
+        "einstieg"
+      ]
+    },
+    {
+      "id": "q-88",
+      "category": "Empfehlungen",
+      "question": "Etwas Episches.",
+      "answer": "NOCO Future: Beyond oder Magic World: The Last Spell.",
+      "keywords": [
+        "etwas",
+        "episches"
+      ]
+    },
+    {
+      "id": "q-89",
+      "category": "Empfehlungen",
+      "question": "Für zwischendurch.",
+      "answer": "Eine einzelne HTML-Episode aus Jungle Run oder Magic World.",
+      "keywords": [
+        "für",
+        "zwischendurch"
+      ]
+    },
+    {
+      "id": "q-90",
+      "category": "Empfehlungen",
+      "question": "Für den Abend.",
+      "answer": "Eine komplette Reihe hintereinander – z. B. Magic World 1–3.",
+      "keywords": [
+        "für",
+        "den",
+        "abend"
+      ]
+    },
+    {
+      "id": "q-91",
+      "category": "Allgemein",
+      "question": "Hallo",
+      "answer": "Hallo! Frag mich nach Filmen, Genres oder wie NOCO WATCH funktioniert.",
+      "keywords": [
+        "hallo"
+      ]
+    },
+    {
+      "id": "q-92",
+      "category": "Allgemein",
+      "question": "Hi",
+      "answer": "Hi! Wonach suchst du – Fantasy, Sci-Fi oder Abenteuer?",
+      "keywords": []
+    },
+    {
+      "id": "q-93",
+      "category": "Allgemein",
+      "question": "Danke",
+      "answer": "Gerne. Viel Spaß beim Streamen.",
+      "keywords": [
+        "danke"
+      ]
+    },
+    {
+      "id": "q-94",
+      "category": "Allgemein",
+      "question": "Hilfe",
+      "answer": "Du kannst nach Filmen, Genres, Reihen oder Technik fragen – oder Stichworte wie Magie, kurz, Original.",
+      "keywords": [
+        "hilfe"
+      ]
+    },
+    {
+      "id": "q-95",
+      "category": "Allgemein",
+      "question": "Wer bist du?",
+      "answer": "Ich bin Frag NOCO – die lokale Empfehlungs-Hilfe von NOCO WATCH.",
+      "keywords": [
+        "wer",
+        "bist"
+      ]
+    },
+    {
+      "id": "q-96",
+      "category": "Allgemein",
+      "question": "Was kannst du?",
+      "answer": "Fragen beantworten, Stichworte erkennen und passende Titel aus deiner Bibliothek vorschlagen.",
+      "keywords": [
+        "was",
+        "kannst"
+      ]
+    },
+    {
+      "id": "q-97",
+      "category": "Allgemein",
+      "question": "Wie suche ich richtig?",
+      "answer": "Nutze die Suche mit Stichworten wie Magie, Jungle oder Sci-Fi – auch kleine Tippfehler gehen oft.",
+      "keywords": [
+        "wie",
+        "suche",
+        "ich",
+        "richtig"
+      ]
+    },
+    {
+      "id": "q-98",
+      "category": "Allgemein",
+      "question": "Was sind Genres?",
+      "answer": "Genres kommen aus den Filmdaten, z. B. Fantasy, Adventure, Sci-Fi, Drama, Animation, Mystery.",
+      "keywords": [
+        "was",
+        "sind",
+        "genres"
+      ]
+    },
+    {
+      "id": "q-99",
+      "category": "Allgemein",
+      "question": "Was ist die Startseite?",
+      "answer": "Ein ruhiger Einstieg mit Hero und wenigen horizontalen Reihen.",
+      "keywords": [
+        "was",
+        "ist",
+        "die",
+        "startseite"
+      ]
+    },
+    {
+      "id": "q-100",
+      "category": "Allgemein",
+      "question": "Wie öffne ich Details?",
+      "answer": "Tippe auf eine Filmkarte – erst Infos, dann Abspielen.",
+      "keywords": [
+        "wie",
+        "öffne",
+        "ich",
+        "details"
+      ]
+    },
+    {
+      "id": "q-101",
+      "category": "Allgemein",
+      "question": "Kann ich pausieren?",
+      "answer": "Ja – Klick oder Tap auf die freie Playerfläche schaltet Play/Pause.",
+      "keywords": [
+        "kann",
+        "ich",
+        "pausieren"
+      ]
+    },
+    {
+      "id": "q-102",
+      "category": "Allgemein",
+      "question": "Gibt es Dark Mode?",
+      "answer": "NOCO WATCH ist von Grund auf dunkel und cinematic gestaltet.",
+      "keywords": [
+        "gibt",
+        "dark",
+        "mode"
+      ]
+    },
+    {
+      "id": "q-103",
+      "category": "Allgemein",
+      "question": "Ist das Netflix?",
+      "answer": "Nein – NOCO WATCH ist dein eigenes lokales Streaming-System.",
+      "keywords": [
+        "ist",
+        "das",
+        "netflix"
+      ]
+    },
+    {
+      "id": "q-104",
+      "category": "Allgemein",
+      "question": "Kann ich offline schauen?",
+      "answer": "Nur solange der PC-Server erreichbar ist (gleiches Netz).",
+      "keywords": [
+        "kann",
+        "ich",
+        "offline",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-105",
+      "category": "Allgemein",
+      "question": "Was passiert ohne Server?",
+      "answer": "Die Oberfläche zeigt, dass der Server nicht erreichbar ist – Filme wurden nicht gelöscht.",
+      "keywords": [
+        "was",
+        "passiert",
+        "ohne",
+        "server"
+      ]
+    },
+    {
+      "id": "q-106",
+      "category": "Allgemein",
+      "question": "Wie aktualisiere ich die Bibliothek?",
+      "answer": "videos.json und media/ auf dem PC anpassen und Server neu laden bzw. neu starten.",
+      "keywords": [
+        "wie",
+        "aktualisiere",
+        "ich",
+        "die",
+        "bibliothek"
+      ]
+    },
+    {
+      "id": "q-107",
+      "category": "Allgemein",
+      "question": "Was bedeutet available?",
+      "answer": "Die Datei wurde auf dem PC gefunden und kann gestreamt werden.",
+      "keywords": [
+        "was",
+        "bedeutet",
+        "available"
+      ]
+    },
+    {
+      "id": "q-108",
+      "category": "Allgemein",
+      "question": "Gibt es Continue Watching?",
+      "answer": "Vorbereitet in der API – Fortschritt kann später ergänzt werden.",
+      "keywords": [
+        "gibt",
+        "continue",
+        "watching"
+      ]
+    },
+    {
+      "id": "q-109",
+      "category": "Allgemein",
+      "question": "Welche Sprache hat die UI?",
+      "answer": "Deutsch, mit englischen Originaltiteln wo sinnvoll.",
+      "keywords": [
+        "welche",
+        "sprache",
+        "hat",
+        "die"
+      ]
+    },
+    {
+      "id": "q-110",
+      "category": "Allgemein",
+      "question": "Wie erweitere ich Frag NOCO?",
+      "answer": "Neue Einträge in data/noco-questions.json ergänzen.",
+      "keywords": [
+        "wie",
+        "erweitere",
+        "ich",
+        "frag",
+        "noco"
+      ]
+    },
+    {
+      "id": "q-111",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir Fantasy",
+      "answer": "Hier sind passende Titel rund um Fantasy aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "fantasy",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-112",
+      "category": "Filme",
+      "question": "Gibt es etwas mit Fantasy?",
+      "answer": "Ja – filtere nach Fantasy in Genres oder Suche.",
+      "keywords": [
+        "fantasy",
+        "film",
+        "genre"
+      ]
+    },
+    {
+      "id": "q-113",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir Adventure",
+      "answer": "Hier sind passende Titel rund um Adventure aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "adventure",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-114",
+      "category": "Filme",
+      "question": "Gibt es etwas mit Adventure?",
+      "answer": "Ja – filtere nach Adventure in Genres oder Suche.",
+      "keywords": [
+        "adventure",
+        "film",
+        "genre"
+      ]
+    },
+    {
+      "id": "q-115",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir Sci-Fi",
+      "answer": "Hier sind passende Titel rund um Sci-Fi aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "sci-fi",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-116",
+      "category": "Filme",
+      "question": "Gibt es etwas mit Sci-Fi?",
+      "answer": "Ja – filtere nach Sci-Fi in Genres oder Suche.",
+      "keywords": [
+        "sci-fi",
+        "film",
+        "genre"
+      ]
+    },
+    {
+      "id": "q-117",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir Mystery",
+      "answer": "Hier sind passende Titel rund um Mystery aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "mystery",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-118",
+      "category": "Filme",
+      "question": "Gibt es etwas mit Mystery?",
+      "answer": "Ja – filtere nach Mystery in Genres oder Suche.",
+      "keywords": [
+        "mystery",
+        "film",
+        "genre"
+      ]
+    },
+    {
+      "id": "q-119",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir Drama",
+      "answer": "Hier sind passende Titel rund um Drama aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "drama",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-120",
+      "category": "Filme",
+      "question": "Gibt es etwas mit Drama?",
+      "answer": "Ja – filtere nach Drama in Genres oder Suche.",
+      "keywords": [
+        "drama",
+        "film",
+        "genre"
+      ]
+    },
+    {
+      "id": "q-121",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir Animation",
+      "answer": "Hier sind passende Titel rund um Animation aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "animation",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-122",
+      "category": "Filme",
+      "question": "Gibt es etwas mit Animation?",
+      "answer": "Ja – filtere nach Animation in Genres oder Suche.",
+      "keywords": [
+        "animation",
+        "film",
+        "genre"
+      ]
+    },
+    {
+      "id": "q-123",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir Magic World",
+      "answer": "Hier sind passende Titel rund um Magic World aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "magic world",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-124",
+      "category": "Filme",
+      "question": "Gibt es etwas mit Magic World?",
+      "answer": "Ja – filtere nach Magic World in Genres oder Suche.",
+      "keywords": [
+        "magic world",
+        "film",
+        "genre"
+      ]
+    },
+    {
+      "id": "q-125",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir Jungle",
+      "answer": "Hier sind passende Titel rund um Jungle aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "jungle",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-126",
+      "category": "Filme",
+      "question": "Gibt es etwas mit Jungle?",
+      "answer": "Ja – filtere nach Jungle in Genres oder Suche.",
+      "keywords": [
+        "jungle",
+        "film",
+        "genre"
+      ]
+    },
+    {
+      "id": "q-127",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir NOCO Future",
+      "answer": "Hier sind passende Titel rund um NOCO Future aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "noco future",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-128",
+      "category": "Filme",
+      "question": "Gibt es etwas mit NOCO Future?",
+      "answer": "Ja – filtere nach NOCO Future in Genres oder Suche.",
+      "keywords": [
+        "noco future",
+        "film",
+        "genre"
+      ]
+    },
+    {
+      "id": "q-129",
+      "category": "Empfehlungen",
+      "question": "Empfiehl mir Originals",
+      "answer": "Hier sind passende Titel rund um Originals aus deiner lokalen Bibliothek.",
+      "keywords": [
+        "originals",
+        "empfehl",
+        "schauen"
+      ]
+    },
+    {
+      "id": "q-130",
+      "category": "Filme",
+      "question": "Gibt es etwas mit Originals?",
+      "answer": "Ja – filtere nach Originals in Genres oder Suche.",
+      "keywords": [
+        "originals",
+        "film",
+        "genre"
+      ]
+    }
+  ]
+}

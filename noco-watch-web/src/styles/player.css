@@ -1,0 +1,214 @@
+.noco-player {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  max-height: 100dvh;
+  background: #000;
+  overflow: hidden;
+}
+
+.noco-player-stage,
+.noco-frame,
+.noco-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #000;
+}
+
+.noco-video {
+  object-fit: contain;
+}
+
+.noco-player-chrome {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:
+    calc(14px + env(safe-area-inset-top, 0px))
+    16px
+    calc(18px + env(safe-area-inset-bottom, 0px));
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, transparent 30%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.86) 0%, transparent 38%);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  pointer-events: none;
+}
+
+.noco-player.ui-visible .noco-player-chrome {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.noco-player-top,
+.noco-controls,
+.noco-player-top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.noco-player-top-actions {
+  justify-content: flex-end;
+}
+
+.noco-player-kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fb7185;
+  font-weight: 700;
+}
+
+.noco-player-title {
+  font-family: var(--display);
+  font-size: clamp(1.1rem, 4.5vw, 1.4rem);
+  margin-top: 4px;
+  max-width: 70vw;
+}
+
+.noco-player-bottom {
+  display: grid;
+  gap: 12px;
+}
+
+.noco-scrub {
+  position: relative;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  touch-action: none;
+}
+
+.noco-scrub-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #e11d48, #fb7185);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.noco-ctrl {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-radius: 999px;
+  padding: 10px 14px;
+  min-height: 42px;
+}
+
+.noco-ctrl-play {
+  min-width: 84px;
+  font-weight: 700;
+}
+
+.noco-ctrl.active {
+  border-color: rgba(225, 29, 72, 0.55);
+  background: rgba(225, 29, 72, 0.22);
+}
+
+.noco-time {
+  color: rgba(255, 255, 255, 0.82);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+}
+
+.noco-cc-wrap {
+  position: relative;
+}
+
+.noco-cc-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 140px;
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(10, 12, 18, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: grid;
+  gap: 4px;
+  z-index: 6;
+}
+
+.noco-cc-menu button {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.noco-cc-menu button.active,
+.noco-cc-menu button:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.noco-subtitle-overlay {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%);
+  max-width: min(88%, 720px);
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  text-align: center;
+  font-size: clamp(0.95rem, 3.4vw, 1.2rem);
+  line-height: 1.35;
+  white-space: pre-line;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.noco-flash {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.6rem;
+  opacity: 0;
+  animation: nocoFlash 0.65s ease forwards;
+  pointer-events: none;
+  z-index: 4;
+}
+
+@keyframes nocoFlash {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+}
+
+@media (min-width: 900px) {
+  .noco-player {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: min(100dvh, 78vw);
+  }
+}
