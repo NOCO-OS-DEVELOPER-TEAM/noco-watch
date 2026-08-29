@@ -36,7 +36,9 @@ npm run desktop
 
 ## Mobile Web / GitHub Pages
 
-Frontend-only unter `noco-watch-web/` (keine Filme im Build).
+**Live UI:** https://noco-os-developer-team.github.io/noco-watch/
+
+Frontend-only unter `noco-watch-web/` (keine Filme im Repo / Build).
 
 Lokal:
 
@@ -44,13 +46,9 @@ Lokal:
 npm run web:build
 ```
 
-GitHub Actions baut und veröffentlicht die Mobile-UI automatisch (Workflow: **Deploy Mobile Web**).
+Deploy: Branch `gh-pages` (aktuell aktiv). Optional später Actions-Workflow in `docs/pages.workflow.yml`.
 
-Nach dem ersten Deploy:
-
-1. Repo → **Settings → Pages → Source: GitHub Actions**
-2. URL z. B. `https://NOCO-OS-DEVELOPER-TEAM.github.io/noco-watch/`
-3. Am Server in `config/default.json` unter `cors.githubPagesOrigins` eintragen:
+Am Server ist CORS bereits für vorbereitet:
 
 ```json
 "githubPagesOrigins": [
@@ -58,7 +56,7 @@ Nach dem ersten Deploy:
 ]
 ```
 
-**Hinweis Mixed Content:** GitHub Pages = HTTPS, lokaler Server = HTTP. Browser können die Verbindung blockieren. Zum Testen die Mobile-UI über `http://DEINE-IP:3000/web/` öffnen.
+**Hinweis Mixed Content:** GitHub Pages = HTTPS, lokaler Server = HTTP. Browser können die API blockieren. Zum Testen die Mobile-UI über `http://DEINE-IP:3000/web/` öffnen.
 
 ## Tech-Stack
 
